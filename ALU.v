@@ -4,7 +4,7 @@ module ALU(A,B,Result,ALUControl);
     input [2:0]ALUControl;
     output reg [31:0]Result;
 
-    wire cout, Carry, Zero , Negative;
+    wire Zero , Negative;
 
     always@(*)
         begin
@@ -37,10 +37,6 @@ module ALU(A,B,Result,ALUControl);
             else if(ALUControl == 3'b111)   //Shift Right
                 Result = A >> B ;
         end
-
-        assign cout = A & B;
-
-        assign Carry = (~ALUControl[1]) & cout;
 
         assign Zero = &(~Result);
 
