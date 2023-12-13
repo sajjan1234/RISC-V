@@ -8,7 +8,7 @@ module ALU(A,B,Result,ALUControl);
 
     always@(*)
         begin
-            if(ALUControl == 3'b000)        //Summation
+            if(ALUControl == 3'b000)        //Summation/Addition
                 Result  = A + B; 
 
             else if(ALUControl == 3'b001)   //Subtraction
