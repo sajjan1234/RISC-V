@@ -6,7 +6,7 @@ module RISC_V_tb();
     RISC_V RISC_V(.clk(clk),.rst(rst));
 
     initial begin
-        $dumpfile("RISC V.vcd");
+        $dumpfile("RISC_V.vcd");
         $dumpvars(0);
     end
 
