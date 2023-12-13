@@ -5,7 +5,7 @@ module PC_Module(clk,rst,PC,PC_Next);
 
     always @(posedge clk)
     begin
-        if(~rst)
+        if(rst == 1'b0)
             PC <= {32{1'b0}};
         else
             PC <= PC_Next;
