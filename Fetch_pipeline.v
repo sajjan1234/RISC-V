@@ -2,6 +2,7 @@
 `include "Instruction_Memory.v"
 `include "PC_Adder.v"
 
+
 module fetch_pipeline(clk, rst, PC_Next_F, Instr_D, PC_D, PCPlusD);
 
 input clk, rst;
