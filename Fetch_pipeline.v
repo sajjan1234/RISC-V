@@ -13,8 +13,7 @@ output reg [31:0]Instr_D, PC_D, PCPlusD;
 wire [31:0]PC_F, PCPlus_F, Instr_F;
 
 // Declaration of Register
-reg [31:0] InstrF_reg;
-reg [31:0] PCF_reg, PCPlusF_reg;
+reg [31:0] PCF_reg, InstrF_reg, PCPlusF_reg;
 
 PC_Module PC_Mod_F(
     .clk(clk),
