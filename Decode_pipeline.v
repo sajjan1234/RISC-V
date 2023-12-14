@@ -32,41 +32,41 @@ reg [31:0]RD1_reg, RD2_reg, Imm_Ext_reg, Mux1_reg;
 
 //Instantiation of modules
 Control_Unit_Top Control_unit(
-    .Op(),
-    .RegWrite(),
-    .ImmSrc(),
-    .ALUSrc(),
-    .MemWrite(),
-    .ResultSrc(),
-    .Branch(),
-    .funct3(),
-    .funct7(),
-    .ALUControl()
+    .Op(Instr_D[6:0]),
+    .RegWrite(RegWrite_D),
+    .ImmSrc(ImmSrc_D),
+    .ALUSrc(ALUSrc_D),
+    .MemWrite(MemWrite_D),
+    .ResultSrc(ResultSrc_D),
+    .Branch(Branch_D),
+    .funct3(Instr_D[14:12]),
+    .funct7(Instr_D[31:25]),
+    .ALUControl(ALUControl_D)
 );
 
 Register_File Reg_file(
-    .clk(),
-    .rst(),
-    .WE3(),
-    .WD3(),
-    .A1(),
-    .A2(),
-    .A3(),
-    .RD1(),
-    .RD2()
+    .clk(clk),
+    .rst(rst),
+    .WE3(RegWrite_D),
+    .WD3(WD3_D),
+    .A1(Instr_D[19:15]),
+    .A2(Instr_D[24:20]),
+    .A3(Instr_D[11:7]),
+    .RD1(RD1_D),
+    .RD2(RD2_D)
 );
 
 Mux Mux1(
-    .a(),
-    .b(),
-    .s(),
-    .c()
+    .a(RD2_D),
+    .b(Imm_Ext_D),
+    .s(ALUSrc_D),
+    .c(Mux1_D)
 );
 
 Sign_Extend sign_extnd(
-    .In(),
-    .Imm_Ext(),
-    .ImmSrc()
+    .In(Instr_D[31:20]),
+    .Imm_Ext(Imm_Ext_D),
+    .ImmSrc(ImmSrc_D)
 );
 
 always@(posedge clk , negedge rst)
