@@ -31,7 +31,43 @@ reg [2:0]ALUControl_reg;
 reg [31:0]RD1_reg, RD2_reg, Imm_Ext_reg, Mux1_reg;
 
 //Instantiation of modules
+Control_Unit_Top Control_unit(
+    .Op(),
+    .RegWrite(),
+    .ImmSrc(),
+    .ALUSrc(),
+    .MemWrite(),
+    .ResultSrc(),
+    .Branch(),
+    .funct3(),
+    .funct7(),
+    .ALUControl()
+);
 
+Register_File Reg_file(
+    .clk(),
+    .rst(),
+    .WE3(),
+    .WD3(),
+    .A1(),
+    .A2(),
+    .A3(),
+    .RD1(),
+    .RD2()
+);
+
+Mux Mux1(
+    .a(),
+    .b(),
+    .s(),
+    .c()
+);
+
+Sign_Extend sign_extnd(
+    .In(),
+    .Imm_Ext(),
+    .ImmSrc()
+);
 
 always@(posedge clk , negedge rst)
 begin
@@ -76,6 +112,7 @@ end
         assign RD1_E        <= (rst == 0) ? 32'h0 : RD1_reg;         
         assign RD2_E        <= (rst == 0) ? 32'h0 : RD2_reg;
         assign Mux1_E       <= (rst == 0) ? 32'h0 : Mux1_reg;
+
 endmodule         
 
 
