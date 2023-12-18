@@ -2,12 +2,12 @@
 `include "Instruction_Memory.v"
 `include "PC_Adder.v"
 
-module fetch_pipeline(clk, rst, PC_Next_F, Instr_D, PC_D, PCPlusD);
+module fetch_cycle(clk, rst, PC_Next_F, Instr_D, PC_D, PCPlusD);
 
 //Port Declaration
 input clk, rst;
 input [31:0]PC_Next_F;
-output reg [31:0]Instr_D, PC_D, PCPlusD;
+output [31:0]Instr_D, PC_D, PCPlusD;
 
 //Interim Wires
 wire [31:0]PC_F, PCPlus_F, Instr_F;
@@ -47,13 +47,11 @@ begin
             PCF_reg = PC_F;
             PCPlusF_reg = PCPlus_F;
         end
-
+end
     assign Instr_D = (rst == 1'b0) ? 32'd0 : InstrF_reg;
     assign PC_D = (rst == 1'b0) ? 32'd0 : PCF_reg;
     assign PCPlusD = (rst == 1'b0) ? 32'd0 : PCPlusF_reg;
-
-end
-
+    
 endmodule
 
 

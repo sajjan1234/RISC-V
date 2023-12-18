@@ -6,7 +6,7 @@
 module Decode_cycle(clk, rst, Instr_D, PC_D, PCPlusD, 
                     RegWrite_E, ImmSrc_E, ALUSrc_E, MemWrite_E,
                     ResultSrc_E, Branch_E, ALUControl_E,
-                    WE3_D, WD3_D, RD1_E, RD2_E, Imm_Ext_E,Mux1_E
+                    WE3_D, WD3_D, RD1_E, RD2_E, Imm_Ext_E,Mux1_E, WriteData_E
                     );
 
 //Declaration of ports
@@ -28,7 +28,7 @@ wire [31:0]RD1_D, RD2_D, Imm_Ext_D, Mux1_D;
 reg RegWrite_reg, ALUSrc_reg, MemWrite_reg, ResultSrc_reg, Branch_reg;
 reg [1:0]ImmSrc_reg;
 reg [2:0]ALUControl_reg;
-reg [31:0]RD1_reg, RD2_reg, Imm_Ext_reg, Mux1_reg;
+reg [31:0]RD1_reg, RD2_reg, Imm_Ext_reg, Mux1_reg, WriteData_reg;
 
 //Instantiation of modules
 Control_Unit_Top Control_unit(
@@ -83,7 +83,8 @@ begin
             ALUControl_reg  = 32'h0;
             RD1_reg         = 32'h0;
             RD2_reg         = 32'h0;
-            Mux1_reg        = 32'h0;
+            Mux1_reg        = 32'h0;  
+            WriteData_reg   = 32'h0;
         end
     else
         begin
@@ -97,6 +98,7 @@ begin
             ALUControl_reg  = ALUControl_D;
             RD1_reg         = RD1_D;
             RD2_reg         = RD2_D;
+            WriteData_reg   = RD2_D;
             Mux1_reg        = Mux1_D;
         end
 end
@@ -112,6 +114,7 @@ end
         assign RD1_E        <= (rst == 0) ? 32'h0 : RD1_reg;         
         assign RD2_E        <= (rst == 0) ? 32'h0 : RD2_reg;
         assign Mux1_E       <= (rst == 0) ? 32'h0 : Mux1_reg;
+        assign WriteData_E  <= (rst == 0) ? 32'h0 : WriteData_reg;    
 
 endmodule         
 
