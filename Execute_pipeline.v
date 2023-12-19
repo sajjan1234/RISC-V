@@ -38,27 +38,27 @@ always@(posedge clk, negedge rst)
     begin
         if(rst == 1'b0)
             begin
-                AluResult_M_r = 32'h0;
-                WriteData_M_r = 32'h0;
-                RegWrite_M_r  = 1'b0;
-                ResultSrc_M_r = 1'b0;
-                MemWrite_M_r  = 1'b0;
+                AluResult_M_r <= 32'h0;
+                WriteData_M_r <= 32'h0;
+                RegWrite_M_r  <= 1'b0;
+                ResultSrc_M_r <= 1'b0;
+                MemWrite_M_r  <= 1'b0;
             end
         else
             begin
-                AluResult_M_r = AluResult_i;
-                WriteData_M_r = RD2_E;
-                RegWrite_M_r  = RegWrite_E;
-                ResultSrc_M_r = ResultSrc_E;
-                MemWrite_M_r  = MemWrite_E;
+                AluResult_M_r <= AluResult_i;
+                WriteData_M_r <= RD2_E;
+                RegWrite_M_r  <= RegWrite_E;
+                ResultSrc_M_r <= ResultSrc_E;
+                MemWrite_M_r  <= MemWrite_E;
             end
     end
 
-    assign AluResult_M   = AluResult_M_r; 
-    assign WriteData_M   = WriteData_M_r;
-    assign RegWrite_M    = RegWrite_M_r;
-    assign ResultSrc_M   = ResultSrc_M_r;
-    assign MemWrite_M    = MemWrite_M_r;
+    assign AluResult_M   <= AluResult_M_r; 
+    assign WriteData_M   <= WriteData_M_r;
+    assign RegWrite_M    <= RegWrite_M_r;
+    assign ResultSrc_M   <= ResultSrc_M_r;
+    assign MemWrite_M    <= MemWrite_M_r;
 
 endmodule
 

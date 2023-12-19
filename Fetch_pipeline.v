@@ -37,20 +37,20 @@ always @(posedge clk or negedge rst)
 begin
     if (rst == 1'b0) 
         begin
-            InstrF_reg = 32'd0;
-            PCF_reg = 32'd0;
-            PCPlusF_reg = 32'd0;
+            InstrF_reg <= 32'd0;
+            PCF_reg <= 32'd0;
+            PCPlusF_reg <= 32'd0;
         end
     else
         begin
-            InstrF_reg = Instr_F;
-            PCF_reg = PC_F;
-            PCPlusF_reg = PCPlus_F;
+            InstrF_reg <= Instr_F;
+            PCF_reg <= PC_F;
+            PCPlusF_reg <= PCPlus_F;
         end
 end
-    assign Instr_D = (rst == 1'b0) ? 32'd0 : InstrF_reg;
-    assign PC_D = (rst == 1'b0) ? 32'd0 : PCF_reg;
-    assign PCPlusD = (rst == 1'b0) ? 32'd0 : PCPlusF_reg;
+    assign Instr_D <= (rst == 1'b0) ? 32'd0 : InstrF_reg;
+    assign PC_D <= (rst == 1'b0) ? 32'd0 : PCF_reg;
+    assign PCPlusD <= (rst == 1'b0) ? 32'd0 : PCPlusF_reg;
     
 endmodule
 

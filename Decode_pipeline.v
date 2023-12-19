@@ -73,33 +73,33 @@ always@(posedge clk , negedge rst)
 begin
     if(rst == 0)
         begin
-            RegWrite_reg    = 32'h0;
-            ALUSrc_reg      = 32'h0;
-            MemWrite_reg    = 32'h0;
-            ResultSrc_reg   = 32'h0;
-            Branch_reg      = 32'h0;
-            Imm_Ext_reg     = 32'h0;
-            ImmSrc_reg      = 32'h0;
-            ALUControl_reg  = 32'h0;
-            RD1_reg         = 32'h0;
-            RD2_reg         = 32'h0;
-            Mux1_reg        = 32'h0;  
-            WriteData_reg   = 32'h0;
+            RegWrite_reg    <= 32'h0;
+            ALUSrc_reg      <= 32'h0;
+            MemWrite_reg    <= 32'h0;
+            ResultSrc_reg   <= 32'h0;
+            Branch_reg      <= 32'h0;
+            Imm_Ext_reg     <= 32'h0;
+            ImmSrc_reg      <= 32'h0;
+            ALUControl_reg  <= 32'h0;
+            RD1_reg         <= 32'h0;
+            RD2_reg         <= 32'h0;
+            Mux1_reg        <= 32'h0;  
+            WriteData_reg   <= 32'h0;
         end
     else
         begin
-            RegWrite_reg    = RegWrite_D;
-            ALUSrc_reg      = ALUSrc_D;
-            MemWrite_reg    = MemWrite_D;
-            ResultSrc_reg   = ResultSrc_D;
-            Branch_reg      = Branch_D;
-            Imm_Ext_reg     = Imm_Ext_D;
-            ImmSrc_reg      = ImmSrc_D;
-            ALUControl_reg  = ALUControl_D;
-            RD1_reg         = RD1_D;
-            RD2_reg         = RD2_D;
-            WriteData_reg   = RD2_D;
-            Mux1_reg        = Mux1_D;
+            RegWrite_reg    <= RegWrite_D;
+            ALUSrc_reg      <= ALUSrc_D;
+            MemWrite_reg    <= MemWrite_D;
+            ResultSrc_reg   <= ResultSrc_D;
+            Branch_reg      <= Branch_D;
+            Imm_Ext_reg     <= Imm_Ext_D;
+            ImmSrc_reg      <= ImmSrc_D;
+            ALUControl_reg  <= ALUControl_D;
+            RD1_reg         <= RD1_D;
+            RD2_reg         <= RD2_D;
+            WriteData_reg   <= RD2_D;
+            Mux1_reg        <= Mux1_D;
         end
 end
 
