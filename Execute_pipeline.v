@@ -13,7 +13,7 @@ output [31:0]AluResult_M, WriteData_M;
 output RegWrite_M, ResultSrc_M, MemWrite_M;
 
 //Interim wires
-wire [31:0]AluResult_i,SrcB_i;
+wire [31:0]AluResult_i, SrcB_i;
 
 //Declaration of Registers
 reg [31:0]AluResult_M_r, WriteData_M_r;
