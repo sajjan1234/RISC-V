@@ -45,8 +45,8 @@ begin
         end
 end
 
-assign Regwrite_R       <= Regwrite_R_reg;
-assign ResultSrc_R      <= ResultSrc_R_reg;
-assign AluResult_R      <= AluResult_R_reg;
-assign ReadData_R       <= ReadData_R_reg;
+        assign Regwrite_R       <= Regwrite_R_reg;
+        assign ResultSrc_R      <= ResultSrc_R_reg;
+        assign AluResult_R      <= AluResult_R_reg;
+        assign ReadData_R       <= ReadData_R_reg;
 endmodule
