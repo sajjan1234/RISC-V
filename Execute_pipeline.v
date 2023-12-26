@@ -54,6 +54,7 @@ always@(posedge clk, negedge rst)
             end
     end
 
+    //declaration of output Assignments
     assign AluResult_M   <= AluResult_M_r; 
     assign WriteData_M   <= WriteData_M_r;
     assign RegWrite_M    <= RegWrite_M_r;
