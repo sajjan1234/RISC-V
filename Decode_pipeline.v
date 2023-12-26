@@ -109,7 +109,7 @@ end
         assign RD1_E        <= (rst == 0) ? 32'h0 : RD1_reg;         
         assign RD2_E        <= (rst == 0) ? 32'h0 : RD2_reg;
         assign Mux1_E       <= (rst == 0) ? 32'h0 : Mux1_reg;
-
+  
 endmodule         
 
 
