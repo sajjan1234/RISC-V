@@ -1,9 +1,9 @@
 `include "Mux.v"
 
-module writeback_cycle(Regwrite_wb, ResultSrc_wb, AluResult_wb, ReadData_wb, Result_wb);
+module writeback_cycle(clk, rst, ResultSrc_wb, AluResult_wb, ReadData_wb, Result_wb);
 
 //declaration of I/O ports
-input Regwrite_wb, ResultSrc_wb;
+input clk, rst, ResultSrc_wb;
 input [31:0] AluResult_wb, ReadData_wb;
 
 output [31:0] Result_wb;
