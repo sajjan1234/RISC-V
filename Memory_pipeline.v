@@ -33,8 +33,8 @@ begin
         begin
             Regwrite_R_reg      <= 1'b0;
             ResultSrc_R_reg     <= 1'b0;
-            AluResult_R_reg     <= 32'h0;
-            ReadData_R_reg      <= 32'h0;
+            AluResult_R_reg     <= 32'h00000000;
+            ReadData_R_reg      <= 32'h00000000;
         end
     else
         begin
@@ -45,6 +45,7 @@ begin
         end
 end
 
+//Declaration of output assignments
         assign Regwrite_R       <= Regwrite_R_reg;
         assign ResultSrc_R      <= ResultSrc_R_reg;
         assign AluResult_R      <= AluResult_R_reg;
