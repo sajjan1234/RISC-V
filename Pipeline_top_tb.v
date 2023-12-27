@@ -3,7 +3,7 @@
 module Pipeline_tb();
     
     reg clk,rst;
-    RISC_V RISC_V(.clk(clk),.rst(rst));
+    pipeline_top RISC_V_pipeline(.clk(clk),.rst(rst));
 
     initial begin
         $dumpfile("RISC_V_pipeline.vcd");
