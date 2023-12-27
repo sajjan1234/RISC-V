@@ -1,12 +1,12 @@
-`include "Single_Cycle_Top.v"
+`include "Pipeline_top.v"
 
-module RISC_V_tb();
+module Pipeline_tb();
     
     reg clk,rst;
     RISC_V RISC_V(.clk(clk),.rst(rst));
 
     initial begin
-        $dumpfile("RISC V.vcd");
+        $dumpfile("RISC_V_pipeline.vcd");
         $dumpvars(0);
     end
 
