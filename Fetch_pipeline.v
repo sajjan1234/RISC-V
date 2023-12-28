@@ -2,18 +2,18 @@
 `include "Instruction_Memory.v"
 `include "PC_Adder.v"
 
-module fetch_cycle(clk, rst, PC_Next_F, Instr_D, PC_D, PCPlusD);
+module fetch_cycle(clk, rst, PC_Next_F, Instr_D);
 
 //Port Declaration
 input clk, rst;
 input [31:0]PC_Next_F;
-output [31:0]Instr_D, PC_D, PCPlusD;
+output [31:0]Instr_D;
 
 //Interim Wires
-wire [31:0]PC_F, PCPlus_F, Instr_F;
+wire [31:0]PC_F, Instr_F;
 
 // Declaration of Register
-reg [31:0] PCF_reg, InstrF_reg, PCPlusF_reg;
+reg [31:0] InstrF_reg, PCPlus_F;
 
 PC_Module PC_Mod_F(
     .clk(clk),
@@ -33,24 +33,19 @@ PC_Adder PC_Adder_F(
     .c(PCPlus_F)
 );
 
-always @(posedge clk or negedge rst)
-begin
-    if (rst == 1'b0) 
-        begin
-            InstrF_reg = 32'd0;
-            PCF_reg = 32'd0;
-            PCPlusF_reg = 32'd0;
-        end
-    else
-        begin
-            InstrF_reg = Instr_F;
-            PCF_reg = PC_F;
-            PCPlusF_reg = PCPlus_F;
-        end
-end
-    assign Instr_D = (rst == 1'b0) ? 32'd0 : InstrF_reg;
-    assign PC_D = (rst == 1'b0) ? 32'd0 : PCF_reg;
-    assign PCPlusD = (rst == 1'b0) ? 32'd0 : PCPlusF_reg;
+always @(posedge clk ,negedge rst)
+    begin
+        if (rst == 1'b0) 
+            begin
+                InstrF_reg   <= 32'd0;
+            end
+        else
+            begin
+                InstrF_reg   <= Instr_F;
+            end
+    end
+        //Declaration of outputs 
+        assign Instr_D       <= (rst == 1'b0) ? 32'd0 : InstrF_reg;
     
 endmodule
 
