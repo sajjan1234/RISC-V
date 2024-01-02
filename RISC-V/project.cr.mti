@@ -1,0 +1,165 @@
+{C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Main_Decoder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Main_Decoder.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Main_Decoder
+
+Top level modules:
+	Main_Decoder
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Instruction_Memory.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Instruction_Memory.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Instruction_Memory
+
+Top level modules:
+	Instruction_Memory
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Control_Unit_Top.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Control_Unit_Top.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ALU_Decoder
+-- Compiling module Main_Decoder
+-- Compiling module Control_Unit_Top
+
+Top level modules:
+	Control_Unit_Top
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/RISC_top.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/RISC_top.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module RISC
+
+Top level modules:
+	RISC
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module PC_Module
+-- Compiling module Instruction_Memory
+-- Compiling module Register_File
+-- Compiling module Sign_Extend
+-- Compiling module ALU
+-- Compiling module ALU_Decoder
+-- Compiling module Main_Decoder
+-- Compiling module Control_Unit_Top
+-- Compiling module Data_Memory
+-- Compiling module PC_Adder
+-- Compiling module Mux
+-- Compiling module RISC_V
+
+Top level modules:
+	PC_Module
+	Instruction_Memory
+	Register_File
+	Sign_Extend
+	ALU
+	Data_Memory
+	PC_Adder
+	RISC_V
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/wrietback.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/wrietback.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module writeback
+
+Top level modules:
+	writeback
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/decode.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/decode.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module decode
+
+Top level modules:
+	decode
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Data_Memory.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Data_Memory.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Data_Memory
+
+Top level modules:
+	Data_Memory
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/PC_Adder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/PC_Adder.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module PC_Adder
+
+Top level modules:
+	PC_Adder
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/ALU.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/ALU.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Mux.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Mux.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Mux
+
+Top level modules:
+	Mux
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/PC.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/PC.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module PC_Module
+
+Top level modules:
+	PC_Module
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/execution.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/execution.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module execution
+
+Top level modules:
+	execution
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Register_File.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Register_File.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Register_File
+
+Top level modules:
+	Register_File
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/fatch.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/fatch.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module fatch
+
+Top level modules:
+	fatch
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/ALU_Decoder.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/ALU_Decoder.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module ALU_Decoder
+
+Top level modules:
+	ALU_Decoder
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Sign_Extend.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Sign_Extend.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module Sign_Extend
+
+Top level modules:
+	Sign_Extend
+
+} {} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top_Tb.v} {0 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top_Tb.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module PC_Module
+-- Compiling module Instruction_Memory
+-- Compiling module Register_File
+-- Compiling module Sign_Extend
+-- Compiling module ALU
+-- Compiling module ALU_Decoder
+-- Compiling module Main_Decoder
+-- Compiling module Control_Unit_Top
+-- Compiling module Data_Memory
+-- Compiling module PC_Adder
+-- Compiling module Mux
+-- Compiling module RISC_V
+-- Compiling module RISC_V_tb
+** Error: (vlog-13069) C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top_Tb.v(33): near "#": syntax error, unexpected '#'.
+** Error: C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top_Tb.v(34): (vlog-13205) Syntax error found in the scope following 'k'. Is there a missing '::'?
+
+} {16.0 18.0} {}} {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/memory.v} {1 {vlog -work work -vopt -stats=none {C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/memory.v}
+Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+-- Compiling module memory
+
+Top level modules:
+	memory
+
+} {} {}}

@@ -1,0 +1,435 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Ashutosh sharma/Desktop/verilog/RISC-V
+T_opt
+!s110 1703000094
+V5Gag_6FMRKf^9LmLXCS5=2
+04 9 4 work RISC_V_tb fast 0
+=1-3863bb8a4a6a-6581b81b-1c8-17b4
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+R0
+vALU
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 f:aDCkUaJ[Sl3LS>G^AOD3
+I1;W8TibB3^iKdj;:AZ^VR0
+R0
+w1702965378
+8ALU.v
+FALU.v
+L0 1
+Z3 OL;L;10.5;63
+Z4 !s108 1704207015.000000
+Z5 !s107 Mux.v|PC_Adder.v|Data_Memory.v|Main_Decoder.v|ALU_Decoder.v|Control_Unit_Top.v|ALU.v|Sign_Extend.v|Register_File.v|Instruction_Memory.v|PC.v|C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top.v|
+Z6 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@a@l@u
+vALU_Decoder
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 8RcYfl6L`XBI6ef6LP:jA1
+IlB6g>b1^J[HSZiDzgObSZ2
+R0
+Z8 w1702965256
+8ALU_Decoder.v
+FALU_Decoder.v
+L0 1
+R3
+R4
+R5
+R6
+!i113 0
+R7
+R1
+n@a@l@u_@decoder
+vControl_Unit_Top
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^cWi]KY^>XUW;nMEJ<nAh2
+IIXBX8zb1eaM2DRX0nQKfT1
+R0
+R8
+8Control_Unit_Top.v
+FControl_Unit_Top.v
+L0 4
+R3
+R4
+R5
+R6
+!i113 0
+R7
+R1
+n@control_@unit_@top
+vData_Memory
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 6Ia2FEHJ];7aOQ6<b_^7B2
+In6f3CJQXiL4mR@>_g;`[O3
+R0
+w1704133218
+8Data_Memory.v
+FData_Memory.v
+L0 1
+R3
+R4
+R5
+R6
+!i113 0
+R7
+R1
+n@data_@memory
+vdecode
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 09COJNE^dYXTKf@mJhEk31
+I<B1mXn;[n7z<2^[AYQ?fe2
+R0
+w1704208461
+8C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/decode.v
+FC:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/decode.v
+L0 1
+R3
+!s108 1704208468.000000
+!s107 C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/decode.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/decode.v|
+!i113 0
+R7
+R1
+vexecution
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 2_X5=<lDdh0?dnWa^=XTW0
+I>VeojWh5@kLa2m64O?;cD3
+R0
+w1704129040
+8C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/execution.v
+FC:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/execution.v
+L0 1
+R3
+Z9 !s108 1704207016.000000
+!s107 C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/execution.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/execution.v|
+!i113 0
+R7
+R1
+vfatch
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 cYLe]M6FRTR:jg<Y6fWOZ0
+Io3UW4?8>doMGgKVlz[m4H2
+R0
+w1703943686
+8C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/fatch.v
+FC:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/fatch.v
+L0 1
+R3
+R9
+!s107 C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/fatch.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/fatch.v|
+!i113 0
+R7
+R1
+vInstruction_Memory
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 2mjGbWIiCmfILWKZhUlfe0
+IF8mei?MfChVY1;geed5E]3
+R0
+w1703943452
+8Instruction_Memory.v
+FInstruction_Memory.v
+L0 1
+R3
+R4
+R5
+R6
+!i113 0
+R7
+R1
+n@instruction_@memory
+vMain_Decoder
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 1W5n22B9AOcc<L5^Og=g@1
+I6[aZT>AY2R>?G^LRYRF4>0
+R0
+w1704133216
+8Main_Decoder.v
+FMain_Decoder.v
+L0 1
+R3
+R4
+R5
+R6
+!i113 0
+R7
+R1
+n@main_@decoder
+vmemory
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ah1Z_^Ig:jLz>QR?:?]==2
+IOXfk:BD@TnO;83]V[i^ET2
+R0
+w1703943047
+8C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/memory.v
+FC:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/memory.v
+L0 1
+R3
+!s108 1704207017.000000
+!s107 C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/memory.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/memory.v|
+!i113 0
+R7
+R1
+vMux
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 @hO>A<I^:6G@>X?Qz@P<J1
+I29Ro5ORbQkgHgQ_DfmHJ<2
+R0
+Z10 w1702126247
+8Mux.v
+FMux.v
+L0 1
+R3
+R4
+R5
+R6
+!i113 0
+R7
+R1
+n@mux
+vPC_Adder
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 _aBS]c>7_A@?2e?KGd5Nb1
+ImHO61NhZEl[d=30hAk`HH3
+R0
+w1703787374
+8PC_Adder.v
+FPC_Adder.v
+L0 1
+R3
+R4
+R5
+R6
+!i113 0
+R7
+R1
+n@p@c_@adder
+vPC_Module
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 jECD^]h;WkWL0Y5;HD5EQ0
+IAD>nbhNKM[z1FbK9Z2OFk3
+R0
+w1703945108
+8PC.v
+FPC.v
+L0 1
+R3
+R4
+R5
+R6
+!i113 0
+R7
+R1
+n@p@c_@module
+vRegister_File
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 CNVC0m1LmLKEj6P?k1V]C2
+IXH?<8M>k;8ef>[ihYOTD60
+R0
+w1704121416
+8Register_File.v
+FRegister_File.v
+L0 1
+R3
+R4
+R5
+R6
+!i113 0
+R7
+R1
+n@register_@file
+vRISC
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 Ngki@UGRQgk8f7h2f_2G;0
+Im]=2dk8?:46Re9W498ZdG2
+R0
+w1704209424
+8C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/RISC_top.v
+FC:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/RISC_top.v
+L0 1
+R3
+!s108 1704209434.000000
+!s107 C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/RISC_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/RISC_top.v|
+!i113 0
+R7
+R1
+n@r@i@s@c
+vRISC_V
+!s110 1704207015
+!i10b 1
+!s100 ciMRZVKlYNJeLHUOJ1okb1
+IDck_^>:0X^lj6bEomIz?k1
+R2
+R0
+w1703937456
+8C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top.v
+FC:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top.v
+L0 11
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R1
+n@r@i@s@c_@v
+vRISC_V_tb
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 mGYbUKJLXm2^X`NzTb=_Z1
+IfZazkA=O4;<e9NQlnTNkT2
+R0
+w1703000333
+8C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top_Tb.v
+FC:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top_Tb.v
+L0 3
+R3
+!s108 1703683778.000000
+!s107 Mux.v|PC_Adder.v|Data_Memory.v|Main_Decoder.v|ALU_Decoder.v|Control_Unit_Top.v|ALU.v|Sign_Extend.v|Register_File.v|Instruction_Memory.v|PC.v|Single_Cycle_Top.v|C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top_Tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/Single_Cycle_Top_Tb.v|
+!i113 0
+R7
+R1
+n@r@i@s@c_@v_tb
+vSign_Extend
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 1;K?M?BW`G2Rg6Zz37d`H1
+ILZ@RCO[jYKDOmZbR<a<Ej3
+R0
+R10
+8Sign_Extend.v
+FSign_Extend.v
+L0 1
+R3
+R4
+R5
+R6
+!i113 0
+R7
+R1
+n@sign_@extend
+vtest_top
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 KHfRD21CT`gJ[3YB2hee`2
+IG?RD@fl2l:7I13ehFHbZh3
+R0
+w1704210947
+8C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/test_RISC.v
+FC:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/test_RISC.v
+L0 1
+R3
+!s108 1704210956.000000
+!s107 C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/test_RISC.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/test_RISC.v|
+!i113 0
+R7
+R1
+vwriteback
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 NCW[RoVLgMbD2cc`F_I?H0
+IP173NhFEO=E:=T=m6bK]D2
+R0
+w1704208547
+8C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/wrietback.v
+FC:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/wrietback.v
+L0 1
+R3
+!s108 1704208552.000000
+!s107 C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/wrietback.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/Ashutosh sharma/Desktop/verilog/RISC-V/wrietback.v|
+!i113 0
+R7
+R1
