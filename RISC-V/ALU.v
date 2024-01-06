@@ -14,7 +14,7 @@ module ALU(A,B,Result,ALUControl);
             else if(ALUControl == 3'b001)   //Subtraction
                 begin
                     if(A > B)
-                        Result  = A - B;
+                        Result  = A - B;  //sub 
                     else
                         Result  = B - A;
                 end
