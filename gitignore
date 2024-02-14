@@ -1,0 +1,38 @@
+# Ignore all files in the /src and /test directories
+/src/*
+/test/*
+
+# Don't ignore files with the extensions .md, .txt, .v, .sv, .pdf, .docx, .doc, .pptx, .ppt, and .bat in any directory
+!*.md
+!*.v
+!*.sv
+!*.pdf
+!*.docx
+!*.doc
+!*.pptx
+!*.ppt
+!*.bat
+
+# Don't ignore files with the extensions .md, .txt, .v, .sv, .pdf, .docx, .doc, .pptx, .ppt, and .bat specifically in the /src and /test directories
+!/src/*.md
+!/src/*.v
+!/src/*.sv
+!/src/*.pdf
+!/src/*.docx
+!/src/*.doc
+!/src/*.pptx
+!/src/*.ppt
+!/src/*.bat
+!/src/*.txt
+!/test/*.md
+!/test/*.v
+!/test/*.sv
+!/test/*.pdf
+!/test/*.docx
+!/test/*.doc
+!/test/*.pptx
+!/test/*.ppt
+!/test/*.bat
+!/test/*.txt
+!/test/*.tsv
+*.out

@@ -17,7 +17,7 @@ module Main_Decoder(Op, RegWrite, ImmSrc, ALUSrc, MemWrite, ResultSrc, Branch, A
                 begin
                     Branch = 1'b0 ;
                     ResultSrc = 1'b0 ;
-                    MemWrite = 1'b0 ;
+                    MemWrite = 1'b0 ;     
                     ALUSrc = 1'b0 ;
                     ImmSrc = 2'b00 ;
                     RegWrite = 1'b1 ;
@@ -32,12 +32,13 @@ module Main_Decoder(Op, RegWrite, ImmSrc, ALUSrc, MemWrite, ResultSrc, Branch, A
                 ALUSrc = 1'b1 ;
                 ImmSrc = 2'b00 ;
                 RegWrite = 1'b1 ;
-                ALUOp = 2'b10 ;
+                ALUOp = 2'b11 ;
+
                 end
             7'b0000011: //lw
                 begin
                 Branch = 1'b0 ;
-                ResultSrc = 2'b1 ;
+                ResultSrc = 1'b1 ;
                 MemWrite = 1'b0 ;
                 ALUSrc = 1'b1 ;
                 ImmSrc = 2'b00 ; 

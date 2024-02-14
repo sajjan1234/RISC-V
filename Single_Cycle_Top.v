@@ -17,7 +17,7 @@ module RISC_V(clk,rst);
     wire [1:0]ImmSrc;
     wire [2:0]ALUControl_Top;
 
-    PC_Module PC(
+    /*PC_Module PC(
         .clk(clk),
         .rst(rst),
         .PC(PC_Top),
@@ -33,9 +33,9 @@ module RISC_V(clk,rst);
     Instruction_Memory Instruction_Memory(
                             .A(PC_Top),
                             .RD(RD_Instr)
-    );
+    );*/
 
-    Register_File Register_File(
+   /* Register_File Register_File(
                             .clk(clk),
                             .rst(rst),
                             .WE3(RegWrite),
@@ -51,9 +51,9 @@ module RISC_V(clk,rst);
                         .In(RD_Instr),
                         .ImmSrc(ImmSrc),
                         .Imm_Ext(Imm_Ext_Top)
-    );
+    );*/
 
-    Mux Mux_Register_to_ALU(
+   /* Mux Mux_Register_to_ALU(
                             .a(RD2_Top),
                             .b(Imm_Ext_Top),
                             .s(ALUSrc),
@@ -65,7 +65,7 @@ module RISC_V(clk,rst);
             .B(RD2_Top),
             .Result(ALUResult),
             .ALUControl(ALUControl_Top)
-    );
+    );*/
 
     Control_Unit_Top Control_Unit_Top(
                             .Op(RD_Instr[6:0]),
@@ -80,14 +80,14 @@ module RISC_V(clk,rst);
                             .ALUControl(ALUControl_Top)
     );
 
-    Data_Memory Data_Memory(
+    /*Data_Memory Data_Memory(
                         .clk(clk),
                         .rst(rst),
                         .WE(MemWrite),
                         .WD(RD2_Top),
                         .A(ALUResult),
                         .RD(ReadData)
-    );
+    );*/
 
     Mux Mux_DataMemory_to_Register(
                             .a(ALUResult),

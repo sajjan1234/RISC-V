@@ -1,13 +1,13 @@
-module Instruction_Memory(A,RD);
-  input [31:0]A;
-  output [31:0]RD;
+module Instruction_Memory(PC,IR);
+  input [31:0]PC;
+  output [31:0]IR;
 
-  reg [31:0] mem [255:0];
+  reg [31:0] IR_mem[255:0];
   
-  assign RD = mem[A];
+  assign IR = IR_mem[PC];
 
-  initial begin
+ /*initial begin
     $readmemh("memfile.txt",mem,1,21);
-  end
+  end*/
 
 endmodule

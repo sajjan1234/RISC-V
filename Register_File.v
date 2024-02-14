@@ -3,12 +3,18 @@ module Register_File(clk,rst,WE3,WD3,A1,A2,A3,RD1,RD2);
     input clk,rst,WE3;
     input [4:0]A1,A2,A3;
     input [31:0]WD3;
-    output [31:0]RD1,RD2;
+    output signed [31:0]RD1,RD2;
 
-    reg [31:0] reg_memory [31:0];
+    reg signed [31:0] reg_memory [31:0];
 
-    always @(posedge rst)
+
+ assign RD1 = ((A1 != 5'b00000) ? (reg_memory[A1]) : (32'h00000000));
+ assign RD2 = ((A2 != 5'b00000) ? (reg_memory[A2]) : (32'h00000000));
+
+
+    always @(negedge rst)
     begin
+     if(!rst) begin
          reg_memory[0] = 32'h0;
          reg_memory[1] = 32'h1;
          reg_memory[2] = 32'h2;
@@ -35,19 +41,20 @@ module Register_File(clk,rst,WE3,WD3,A1,A2,A3,RD1,RD2);
          reg_memory[23] = 32'h23;
          reg_memory[24] = 32'h24;
          reg_memory[25] = 32'h25;
-		 reg_memory[26] = 32'h26;
+         reg_memory[26] = 32'h26;
          reg_memory[27] = 32'h27;
          reg_memory[28] = 32'h28;
          reg_memory[29] = 32'h29;
          reg_memory[30] = 32'h30;
          reg_memory[31] = 32'h31;
-
+    end
     end
 
-    assign RD1 = (A1 != 5'b0) ? reg_memory[A1] : 32'b0;
-    assign RD2 = (A2 != 5'b0) ? reg_memory[A2] : 32'b0;
+   
+ /*assign RD1 = ((A1 != 5'b00000)?(reg_memory[A1]):(32'h00000000));
+ assign RD2 = ((A2 != 5'b00000)?(reg_memory[A2]):(32'h00000000));*/
 
-    always @(posedge clk , posedge rst)
+    always @(A3)
     begin
         if (WE3) begin
             reg_memory[A3] <= WD3;

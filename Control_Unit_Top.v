@@ -1,13 +1,12 @@
-`include "ALU_Decoder.v"
-`include "Main_Decoder.v"
-
-module Control_Unit_Top(Op,RegWrite,ImmSrc,ALUSrc,MemWrite,ResultSrc,Branch,funct3,funct7,ALUControl);
+module Control_Unit_Top(Op,RegWrite,ImmSrc,ALUSrc,MemWrite,ResultSrc,funct3,funct7,ALUControl);
 
     input [6:0]Op,funct7;
     input [2:0]funct3;
-    output RegWrite,ALUSrc,MemWrite,ResultSrc,Branch;
+    output RegWrite,ALUSrc,MemWrite,ResultSrc;
+//Branch;
     output [1:0]ImmSrc;
-    output [2:0]ALUControl;
+    output [3:0]ALUControl;
+    //output [2:0]Mem_Control_t;
 
     wire [1:0]ALUOp;
 
@@ -29,5 +28,6 @@ module Control_Unit_Top(Op,RegWrite,ImmSrc,ALUSrc,MemWrite,ResultSrc,Branch,func
                             .ALUControl(ALUControl)
     );
 
-
+   /*Memory_Decoder mem_decoder(.Mem_Control(Mem_Control_t),
+                              .funct3(funct3));*/
 endmodule

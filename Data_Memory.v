@@ -8,19 +8,21 @@ module Data_Memory(clk,rst,WE,WD,A,RD);
     reg [31:0] mem [255:0];
 
     integer i;
-    always @(posedge clk) 
+    always @(negedge rst) 
         begin
-            if (rst)
+            if (!rst)
                 begin
-                    for (i=0 ; i<256 ; i=i+1)
+                    for (i=0 ; i<256 ; i=i+1 )
                         begin
-                            mem[i] <= 32'b0 ;
+                            mem[i] <= i*30000 ;
                         end
                 end
-            else if (WE) 
-                    begin
-                        mem[A] <= WD ;
-                    end
-        end
-    assign RD = mem[A] ;
+       end
+
+
+      always@(A)      
+         if (WE) 
+            mem[A] <= WD ;
+              
+assign RD = mem[A] ;
 endmodule
